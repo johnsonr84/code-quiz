@@ -1,4 +1,4 @@
-// Code Questions
+// CODE QUESTIONS ============================================
 
 const questions = [
 	{
@@ -41,9 +41,37 @@ const questions = [
 // if answer === wrong then count - 5 seconds then next question
 // if lastAnswer then allow saving of high score and initials
 // SUBMIT NEVER CHANGES 
-// timer
+
+// TIMER ====================================================
+var timeEl = document.querySelector("#timeClock");
 // count variable = 75sec
+var secondsLeft = 75;
 // if count === 0 stop timer(clearInterval()) 
+function setTime() {
+	var timerInterval = setInterval(function() {
+	  secondsLeft--;
+	  timeEl.textContent = secondsLeft + " seconds remaining to correctly answer.";
+  
+	  if(secondsLeft === 0) {
+		clearInterval(timerInterval);
+		sendMessage();
+	  }
+  
+	}, 7500);
+  }
+
+  function sendMessage() {
+	timeEl.textContent = " ";
+  
+	var imgEl = document.createElement("img");
+  
+	imgEl.setAttribute("src", "images/image_1.jpg");
+	mainEl.appendChild(imgEl);
+  
+  }
+  
+  setTime();
+  
 // then allow them to save initials and score
 // initials require input
 // localstorage to save initials and score and display initials and score
