@@ -13,26 +13,29 @@
 
 <body>
     <!-- Quiz Container -->
-    <div class="container">
-        <div class="row">
-            <div id="highScores">
-                <h2>View Highscores</h2>
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="col-6">
+                <div id="highScores">
+                    <h3>View Highscores</h3>
+                </div>
             </div>
-            <div id="timeClock">
-                <h2>Time: 0</h2>
+            <div class="col-6">
+                <div id="timeClock">
+                    <h3>Time: 0</h3>
+                </div>
             </div>
         </div>
-        <div class="row" id="quizDiv">
+        <div class="row justify-content-center" id="quizDiv">
             <div>
-                <h1>Coding Quiz</h1>
+                <h1>Coding Quiz Challenge</h1>
             </div>
-            <h2>
-                Try to answer the following code related questions within the time limit. Keep in mind that incorrect
-                answers will penalize your score time by ten seconds! Click Start to begin.
-            </h2>
+            <p>Try to answer the following code related questions within the time limit.</p>
+            <p> Keep in mind that incorrect answers will penalize your score time by ten seconds!</p>
+            <p>Click Start to begin.</p>
             <!-- start button -->
-            <div class="row">
-                <button id="startBtn">Start Quiz</button>
+            <div class="row justify-content-center">
+                <button id="startBtn" type="button" class="btn btn-primary btn-lg">Start Quiz</button>
             </div>
         </div>
 
