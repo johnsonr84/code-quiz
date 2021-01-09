@@ -15,23 +15,31 @@
     <!-- Quiz Container -->
     <div class="container">
         <div class="row">
-            <div id="highScores">View Highscores </div>
-            <div id="timeClock">Time: </div>
+            <div id="highScores">
+                <h2>View Highscores</h2>
+            </div>
+            <div id="timeClock">
+                <h2>Time: 0</h2>
+            </div>
         </div>
-        <div class="row">
-            <h1 id="quizDiv">Coding Quiz</h1>
-            <p>
+        <div class="row" id="quizDiv">
+            <div>
+                <h1>Coding Quiz</h1>
+            </div>
+            <h2>
                 Try to answer the following code related questions within the time limit. Keep in mind that incorrect
-                answers will penalize your score time by ten seconds!
-            </p>
+                answers will penalize your score time by ten seconds! Click Start to begin.
+            </h2>
+            <!-- start button -->
+            <div class="row">
+                <button id="startBtn">Start Quiz</button>
+            </div>
         </div>
-        <!-- start button -->
-        <div class="row">
-            <button id="startBtn">Start Quiz</button>
-        </div>
+
     </div>
 
     <script src="./script.js"></script>
+    <script src="./codequestions/js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
