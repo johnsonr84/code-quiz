@@ -1,5 +1,14 @@
-// CODE QUESTIONS ============================================
+// VARIABLES ===================================================
+var startButton = document.getElementById("startBtn")
+var quizDiv = document.getElementById("h1");
 
+// BUTTONS =====================================================
+document.createElement('button1') = answer1
+document.createElement('button2') = answer2
+document.createElement('button3') = answer3
+document.createElement('button4') = answer4
+
+// CODE QUESTIONS ==============================================
 const questions = [
 	{
 		question: 'Commonly used data types DO NOT Include ____________ .',
@@ -30,11 +39,8 @@ const questions = [
 
 
 // add event listener on start 
-// document.createElement('h1') = question1
-// document.createElement('button1') = answer1
-// document.createElement('button2') = answer2
-// document.createElement('button3') = answer3
-// document.createElement('button4') = answer4
+
+
 // QUESTIONS AND ANSWERS CHANGE
 // document.createElement('submit') = submit
 // if answer === right then next question
@@ -71,7 +77,7 @@ function setTime() {
   }
   
   setTime();
-  
+
 // then allow them to save initials and score
 // initials require input
 // localstorage to save initials and score and display initials and score
