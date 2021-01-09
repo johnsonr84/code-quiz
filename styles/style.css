@@ -28,6 +28,11 @@
     background-color: purple;
 }
 
+#btn-1, #btn-2, #btn-3, #btn-4 {
+    padding: 0.5rem;
+    background-color: purple;
+}
+
 h1 {
     padding: 1rem;
 }
@@ -43,5 +48,9 @@ h3 {
 
 p {
     font-size: 18px;
+}
+
+.hidden {
+    display: none;
 }
 
