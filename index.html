@@ -12,7 +12,7 @@
 </head>
 
 <body>
-<!------------------ NAVBAR CONTAINER -------------------> 
+    <!------------------ NAVBAR CONTAINER ------------------->
     <div class="container-fluid">
         <div class="row">
             <div class="col-6">
@@ -26,7 +26,7 @@
                 </div>
             </div>
         </div>
-<!------------------ INSTRUCTIONS CONTAINER ------------------->        
+        <!------------------ INSTRUCTIONS CONTAINER ------------------->
         <div class="home-container" role="document">
             <div class="row justify-content-center">
                 <h1>Coding Quiz Challenge</h1>
@@ -40,17 +40,40 @@
                 <button id="startBtn" type="button" class="btn btn-primary btn-lg">Start Quiz</button>
             </div>
         </div>
- <!------------------ QUIZ CONTAINER ------------------->
+        <!------------------ QUIZ CONTAINER ------------------->
         <div class="quiz-container hide" role="main">
-                <div class="question-number"></div>
-                <div class="question-text"></div>
-                <div class="option-container"></div>
-                <div class="next-btn">
-                    <button type="button" class="btn btn-primary btn-md">Next</button>
-                </div>
-                <div class="answers-indicator"></div>
+            <div class="question-number"></div>
+            <div class="question-text"></div>
+            <div class="option-container"></div>
+            <div class="next-btn">
+                <button type="button" class="btn btn-primary btn-md" id="nextBtn">Next</button>
+            </div>
+            <div class="answers-indicator"></div>
         </div>
-
+        <!------------------ RESULT CONTAINER ------------------->
+        <div class='result-container hide'>
+            <h1> Quiz Result </h1>
+            <table class="table table-light">
+                <tbody>
+                    <tr>
+                        <th>Current Score</th>
+                        <td><span id="current-score"></span></td>
+                    </tr>
+                    <tr></tr>
+                    <th>High Scores</th>
+                    <td><span id="high-scores"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+            <form id="input">
+                <input id="initials" type="text" name="initials" placeholder="Initials">
+                <button class="btn btn-primary btn-md" type="submit" id="saveBtn">Save</button>
+            </form>
+            <div>
+                <button type="button" id="tryBtn" class="btn btn-primary btn-md">Try Again</button>
+                <button type="button" id="resetBtn" class="btn btn-primary btn-md">Reset</button>
+            </div>
+        </div>
     </div>
 
     <script src="./script.js"></script>

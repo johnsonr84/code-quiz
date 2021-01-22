@@ -27,7 +27,7 @@
     background-color: purple;
 }
 
-#btn-1, #btn-2, #btn-3, #btn-4 {
+#saveBtn, #nextBtn, #tryBtn, #resetBtn {
     padding: 0.5rem;
     background-color: purple;
 }
