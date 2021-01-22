@@ -15,14 +15,13 @@
     color: purple;
 }
 
-#quizDiv {
-    display: block;
+.home-container {
     text-align: center;
     margin: 5rem;
 }
 
 #startBtn {
-    display: block;
+    /* justify-content: center; */
     margin: 2rem;
     padding: 1rem;
     background-color: purple;
@@ -34,11 +33,13 @@
 }
 
 h1 {
+    /* display: block; */
     padding: 1rem;
 }
 
 h2 {
     padding: 1rem;
+    text-align: center;
 }
 
 h3 {
@@ -47,6 +48,8 @@ h3 {
 }
 
 p {
+    /* display: block; */
+    /* text-align: center; */
     font-size: 18px;
 }
 
