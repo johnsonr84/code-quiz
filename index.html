@@ -12,9 +12,9 @@
 </head>
 
 <body>
-    <!-- Quiz Container -->
+<!------------------ NAVBAR CONTAINER -------------------> 
     <div class="container-fluid">
-        <div class="row ">
+        <div class="row">
             <div class="col-6">
                 <div id="highScores">
                     <h3>View Highscores</h3>
@@ -26,7 +26,8 @@
                 </div>
             </div>
         </div>
-        <div class="home-container">
+<!------------------ INSTRUCTIONS CONTAINER ------------------->        
+        <div class="home-container" role="document">
             <div class="row justify-content-center">
                 <h1>Coding Quiz Challenge</h1>
             </div>
@@ -39,26 +40,21 @@
                 <button id="startBtn" type="button" class="btn btn-primary btn-lg">Start Quiz</button>
             </div>
         </div>
-        <div class="quiz-container">
-            <h1 id="question" class="hidden">Question</h1>
-            <div id="answer-btns" class="hidden">
-                <button id="btn-1" type="button" class="btn btn-primary btn-md">answer 1</button>
-                <button id="btn-2" type="button" class="btn btn-primary btn-md">answer 2</button>
-                <button id="btn-3" type="button" class="btn btn-primary btn-md">answer 3</button>
-                <button id="btn-4" type="button" class="btn btn-primary btn-md">answer 4</button>
-            </div>
-            <div id="answer" class="hidden">
-                <h3></h3>
-            </div>
+ <!------------------ QUIZ CONTAINER ------------------->
+        <div class="quiz-container hide" role="main">
+                <div class="question-number"></div>
+                <div class="question-text"></div>
+                <div class="option-container"></div>
+                <div class="next-btn">
+                    <button type="button" class="btn btn-primary btn-md">Next</button>
+                </div>
+                <div class="answers-indicator"></div>
         </div>
 
     </div>
 
     <script src="./script.js"></script>
     <script src="./codequestions/js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>
