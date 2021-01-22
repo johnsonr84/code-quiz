@@ -37,21 +37,21 @@
             </div>
             <!-- start button -->
             <div class="row justify-content-center">
-                <button id="startBtn" type="button" class="btn btn-primary btn-lg">Start Quiz</button>
+                <button type="button" id="startBtn" class="btn btn-primary btn-md">Start Quiz</button>
             </div>
         </div>
         <!------------------ QUIZ CONTAINER ------------------->
-        <div class="quiz-container hide" role="main">
+        <div class="quiz-container hidden" role="main">
             <div class="question-number"></div>
             <div class="question-text"></div>
             <div class="option-container"></div>
             <div class="next-btn">
-                <button type="button" class="btn btn-primary btn-md" id="nextBtn">Next</button>
+                <button type="button" id="nextBtn" class="btn btn-primary btn-md">Next</button>
             </div>
             <div class="answers-indicator"></div>
         </div>
         <!------------------ RESULT CONTAINER ------------------->
-        <div class='result-container hide'>
+        <div class='result-container hidden'>
             <h1> Quiz Result </h1>
             <table class="table table-light">
                 <tbody>
@@ -67,7 +67,7 @@
             </table>
             <form id="input">
                 <input id="initials" type="text" name="initials" placeholder="Initials">
-                <button class="btn btn-primary btn-md" type="submit" id="saveBtn">Save</button>
+                <button  type="submit" id="saveBtn" class="btn btn-primary btn-md">Save</button>
             </form>
             <div>
                 <button type="button" id="tryBtn" class="btn btn-primary btn-md">Try Again</button>
