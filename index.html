@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Quiz</title>
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -45,9 +45,7 @@
             <div class="question-number"></div>
             <div class="question-text"></div>
             <div class="option-container"></div>
-            <div class="next-btn">
-                <button type="button" id="nextBtn" class="btn btn-primary btn-md">Next</button>
-            </div>
+            <button type="button" id="nextBtn" class="btn btn-primary btn-md">Next</button>
             <div class="answers-indicator"></div>
         </div>
         <!------------------ RESULT CONTAINER ------------------->
@@ -67,7 +65,7 @@
             </table>
             <form id="input">
                 <input id="initials" type="text" name="initials" placeholder="Initials">
-                <button  type="submit" id="saveBtn" class="btn btn-primary btn-md">Save</button>
+                <button type="submit" id="saveBtn" class="btn btn-primary btn-md">Save</button>
             </form>
             <div>
                 <button type="button" id="tryBtn" class="btn btn-primary btn-md">Try Again</button>
@@ -75,7 +73,7 @@
             </div>
         </div>
     </div>
-
+    <!-- SCRIPTS -->
     <script src="./script.js"></script>
     <script src="./codequestions/js"></script>
 </body>
