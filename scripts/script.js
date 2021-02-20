@@ -48,6 +48,8 @@ function setTime() {
   
   setTime();
 
+  test
+
 // then allow them to save initials and score
 // initials require input
 // localstorage to save initials and score and display initials and score
